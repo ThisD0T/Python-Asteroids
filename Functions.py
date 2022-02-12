@@ -34,3 +34,10 @@ def limit_vector(magnitude_cap, vector=(0, 0)):
 
     return vector
 
+def vector_from_angle(magnitude, angle):# get a vector of any magnitude from an angle
+    angle = math.radians(angle) - math.pi / 2
+    x = math.cos(angle) * magnitude
+    y = math.sin(angle) * magnitude * -1
+    vector = (x, y)
+
+    return vector
