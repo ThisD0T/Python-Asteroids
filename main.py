@@ -222,6 +222,7 @@ class Window(pyglet.window.Window):
 
         for asteroid in asteroids:
             asteroids.remove(asteroid)
+            print("removed asteroid")
 
         self.createAsteroid(5)
 
