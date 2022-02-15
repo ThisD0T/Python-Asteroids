@@ -220,9 +220,7 @@ class Window(pyglet.window.Window):
         player.position[0] = window_width // 2
         player.position[1] = window_height // 2
 
-        for asteroid in asteroids:
-            asteroids.remove(asteroid)
-            print("removed asteroid")
+        asteroids.clear()
 
         self.createAsteroid(5)
 
